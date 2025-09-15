@@ -61,6 +61,16 @@ keymap = [
     { on = [ "<Esc>" ], run = "close", desc = "Cancel input" },
     { on = [ "<Enter>" ], run = "close --submit", desc = "Submit input" },
     { on = [ "<C-c>" ], run = "close", desc = "Cancel input" },
+    { on = [ "<Backspace>" ], run = "backspace", desc = "Delete previous character" },
+    { on = [ "<Delete>" ], run = "delete", desc = "Delete current character" },
+    { on = [ "<C-h>" ], run = "backspace", desc = "Delete previous character" },
+    { on = [ "<Cmd-Backspace>" ], run = "kill", desc = "Delete whole line before cursor" },
+    { on = [ "<C-u>" ], run = "kill", desc = "Delete whole line before cursor" },
+    { on = [ "<C-k>" ], run = "kill --dir=after", desc = "Delete line after cursor" },
+    { on = [ "<Left>" ], run = "move -1", desc = "Move cursor left" },
+    { on = [ "<Right>" ], run = "move 1", desc = "Move cursor right" },
+    { on = [ "<C-a>" ], run = "move -999", desc = "Move to beginning of line" },
+    { on = [ "<C-e>" ], run = "move 999", desc = "Move to end of line" },
 ]
 
 [select]
