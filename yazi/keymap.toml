@@ -64,7 +64,7 @@ keymap = [
     { on = [ "<Backspace>" ], run = "backspace", desc = "Delete previous character" },
     { on = [ "<Delete>" ], run = "delete", desc = "Delete current character" },
     { on = [ "<C-h>" ], run = "backspace", desc = "Delete previous character" },
-    { on = [ "<Cmd-Backspace>" ], run = "kill", desc = "Delete whole line before cursor" },
+    { on = [ "<D-Backspace>" ], run = "kill", desc = "Delete whole line before cursor" },
     { on = [ "<C-u>" ], run = "kill", desc = "Delete whole line before cursor" },
     { on = [ "<C-k>" ], run = "kill --dir=after", desc = "Delete line after cursor" },
     { on = [ "<Left>" ], run = "move -1", desc = "Move cursor left" },
