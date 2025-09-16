@@ -9,6 +9,14 @@ prepend_keymap = [
     { on = [ "h" ], run = "leave", desc = "Go back to parent directory" },
     { on = [ "l" ], run = "enter", desc = "Enter directory or open file" },
 
+    # Sort functionality
+    { on = [ "s", "m" ], run = "sort mtime --reverse=no", desc = "Sort by modified time (oldest first)" },
+    { on = [ "s", "r" ], run = "sort mtime --reverse", desc = "Sort by modified time (newest first)" },
+    { on = [ "s", "n" ], run = "sort natural --reverse=no", desc = "Sort by name" },
+    { on = [ "s", "s" ], run = "sort size", desc = "Sort by size" },
+    { on = [ "s", "e" ], run = "sort extension", desc = "Sort by extension" },
+    { on = [ "s", "c" ], run = "sort ctime", desc = "Sort by creation time" },
+
     # Vim-like numbered navigation (single digits) - using array syntax
     { on = [ "1", "j" ], run = "arrow 1", desc = "Move 1 down" },
     { on = [ "2", "j" ], run = "arrow 2", desc = "Move 2 down" },
